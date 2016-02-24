@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="okhttp.demo.com.okhttpdemo.RxJavaDemo.RxJavaActivity">
+
+    <Button
+        android:id="@+id/rxjava_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to Start RxJava Demo" />
+
+    <Button
+        android:id="@+id/from_observable_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Integer list observable" />
+
+    <Button
+        android:id="@+id/async_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asynchronous jobs" />
+
+    <Button
+        android:id="@+id/scenario_1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="场景一" />
+
+    <Button
+        android:id="@+id/scenario_2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="场景二" />
+
+    <Button
+        android:id="@+id/event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="事件处理" />
+
+</LinearLayout>
