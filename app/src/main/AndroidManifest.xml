@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".retrofitDemo.RetrofitActivity" />
         <activity android:name=".RxJavaDemo.RxJavaActivity"></activity>
+        <activity android:name=".KotlinDemo.KotlinActivity"></activity>
     </application>
 
 </manifest>
