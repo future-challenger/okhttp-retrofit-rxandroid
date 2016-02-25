@@ -166,6 +166,8 @@ public class RxJavaActivity extends Activity {
                 Toast.makeText(RxJavaActivity.this, "Clicked", Toast.LENGTH_SHORT).show();
             }
         });
+
+        
     }
 
     /**

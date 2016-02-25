@@ -21,6 +21,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import okhttp.demo.com.okhttpdemo.KotlinDemo.KotlinActivity;
 import okhttp.demo.com.okhttpdemo.RxJavaDemo.RxJavaActivity;
 import okhttp.demo.com.okhttpdemo.retrofitDemo.RetrofitActivity;
 import okhttp3.Call;
@@ -64,6 +65,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         ds.add("async request");
         ds.add("retrofit");
         ds.add("RxJava in Android");
+        ds.add("Kotlin demo");
         sectionListView.setAdapter(new ItemAdapter(MainActivity.this, android.R.layout.simple_list_item_1, ds));
         sectionListView.setOnItemClickListener(this);
 
@@ -88,6 +90,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
             startActivity(i);
         } else if (position == 3){
             Intent i = new Intent(MainActivity.this, RxJavaActivity.class);
+            startActivity(i);
+        }else if(position == 4) {
+            Intent i = new Intent(MainActivity.this, KotlinActivity.class);
             startActivity(i);
         }
     }
