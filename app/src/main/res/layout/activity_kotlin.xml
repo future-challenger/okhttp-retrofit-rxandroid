@@ -4,9 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView android:id="@+id/kotlin_textview"
+    <TextView
+        android:id="@+id/kotlin_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kotlin" />
+
+    <Button
+        android:id="@+id/kotlin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple button" />
+
+    <Button
+        android:id="@+id/kotlin_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="object button" />
 
 </LinearLayout>
