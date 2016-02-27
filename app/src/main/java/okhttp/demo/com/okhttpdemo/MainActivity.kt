@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
 import okhttp.demo.com.okhttpdemo.KotlinDemo.KotlinActivity
+import okhttp.demo.com.okhttpdemo.RecycleView.KotlinRecycleActivity
 import okhttp.demo.com.okhttpdemo.RxJavaDemo.RxJavaActivity
 import okhttp.demo.com.okhttpdemo.retrofitDemo.RetrofitActivity
 import okhttp3.*
@@ -45,6 +46,7 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         ds.add("retrofit")
         ds.add("RxJava in Android")
         ds.add("Kotlin demo")
+        ds.add("Recyeler View")
         sectionListView.adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_list_item_1, ds)
         sectionListView.onItemClickListener = this
 
@@ -66,6 +68,9 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             startActivity(i)
         } else if (position == 4) {
             val i = Intent(this@MainActivity, KotlinActivity::class.java)
+            startActivity(i)
+        } else if (position == 5) {
+            val i = Intent(this@MainActivity, KotlinRecycleActivity::class.java)
             startActivity(i)
         }
     }
@@ -137,12 +142,12 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         })
     }
 
-//    private class ItemAdapter(context: Context, resource: Int, objects: List<String>) : ArrayAdapter<String>(context, resource, objects) {
-//
-//        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-//            return super.getView(position, convertView, parent)
-//        }
-//    }
+    //    private class ItemAdapter(context: Context, resource: Int, objects: List<String>) : ArrayAdapter<String>(context, resource, objects) {
+    //
+    //        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+    //            return super.getView(position, convertView, parent)
+    //        }
+    //    }
 
     companion object {
         private val TAG = "###okHttp"

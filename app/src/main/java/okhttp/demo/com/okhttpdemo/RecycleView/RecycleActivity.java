@@ -3,6 +3,8 @@ package okhttp.demo.com.okhttpdemo.RecycleView;
 import android.app.Activity;
 import android.os.Bundle;
 
+import okhttp.demo.com.okhttpdemo.R;
+
 public class RecycleActivity extends Activity {
 
     @Override
