@@ -19,8 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".retrofitDemo.RetrofitActivity" />
-        <activity android:name=".RxJavaDemo.RxJavaActivity"></activity>
-        <activity android:name=".KotlinDemo.KotlinActivity"></activity>
+        <activity android:name=".RxJavaDemo.RxJavaActivity" />
+        <activity android:name=".KotlinDemo.KotlinActivity" />
+        <activity android:name=".RecycleView.RecycleActivity" />
+        <activity android:name=".RecycleView.KotlinRecycleActivity"></activity>
     </application>
 
 </manifest>
