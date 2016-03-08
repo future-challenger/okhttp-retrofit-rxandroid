@@ -12,16 +12,18 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Toast
+import okhttp.demo.com.okhttpdemo.DebugDemo.DebugDemoActivity
 import okhttp.demo.com.okhttpdemo.KotlinDemo.KotlinActivity
 import okhttp.demo.com.okhttpdemo.RecycleView.KotlinRecycleActivity
 import okhttp.demo.com.okhttpdemo.RxJavaDemo.RxJavaActivity
+import okhttp.demo.com.okhttpdemo.TouchDemo.TouchDemoActivity
 import okhttp.demo.com.okhttpdemo.retrofitDemo.RetrofitActivity
 import okhttp3.*
 import java.io.IOException
 import java.util.*
 import java.util.concurrent.Executors
 
-class MainActivity : Activity(), AdapterView.OnItemClickListener {
+class MainActivity() : Activity(), AdapterView.OnItemClickListener {
 
     private val requestHandler = object : Handler() {
         override fun handleMessage(msg: Message) {
@@ -47,6 +49,8 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
         ds.add("RxJava in Android")
         ds.add("Kotlin demo")
         ds.add("Recyeler View")
+        ds.add("Debug Demo")
+        ds.add("Touch Demo")
         sectionListView.adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_list_item_1, ds)
         sectionListView.onItemClickListener = this
 
@@ -71,6 +75,12 @@ class MainActivity : Activity(), AdapterView.OnItemClickListener {
             startActivity(i)
         } else if (position == 5) {
             val i = Intent(this@MainActivity, KotlinRecycleActivity::class.java)
+            startActivity(i)
+        } else if (position == 6) {
+            val i = Intent(this@MainActivity, DebugDemoActivity::class.java)
+            startActivity(i)
+        } else if (position == 7) {
+            val i = Intent(this@MainActivity, TouchDemoActivity::class.java)
             startActivity(i)
         }
     }

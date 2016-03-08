@@ -22,7 +22,17 @@
         <activity android:name=".RxJavaDemo.RxJavaActivity" />
         <activity android:name=".KotlinDemo.KotlinActivity" />
         <activity android:name=".RecycleView.RecycleActivity" />
-        <activity android:name=".RecycleView.KotlinRecycleActivity"></activity>
+        <activity android:name=".RecycleView.KotlinRecycleActivity" />
+        <activity android:name=".DebugDemo.DebugDemoActivity" />
+        <activity android:name=".DebugDemo.URLListActivity" />
+        <activity android:name=".TempActivity" />
+        <activity android:name=".TouchDemo.TouchDemoActivity" />
+        <activity android:name=".ScrollerDemo.ScrollerActivity" />
+        <activity android:name=".TouchDemo.MultiTouchActivity" />
+        <activity android:name=".TouchDemo.DragDropActivity" />
+        <activity android:name=".TouchDemo.DragDropScrollActivity" />
+        <activity android:name=".TouchDemo.ScaleActivity" />
+        <activity android:name=".TouchDemo.TouchDemoListActivity"></activity>
     </application>
 
 </manifest>

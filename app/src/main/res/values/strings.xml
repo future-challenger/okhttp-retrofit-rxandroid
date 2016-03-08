@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OkHttpDemo</string>
+    <string name="add_url">添加</string>
+    <string name="prompt_title">添加URL</string>
 </resources>

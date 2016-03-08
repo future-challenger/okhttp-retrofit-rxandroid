@@ -8,4 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="android:style/Theme.Material.Dialog.NoActionBar"></style>
+
 </resources>
